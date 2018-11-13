@@ -43,7 +43,6 @@
 
     <properties>
         <jumpy.compile.skip>false</jumpy.compile.skip>
-        <jumpy.test.skip>false</jumpy.test.skip>
         <jumpy.version>0.2.4</jumpy.version>
     </properties>
 
