@@ -1,5 +1,6 @@
-from .java_classes import  KerasModelImport
+from .java_classes import KerasModelImport
 from .ndarray import array
+
 
 class KerasModel(object):
     def __init__(self, filepath):
@@ -11,7 +12,6 @@ class KerasModel(object):
         except Exception:
             self.model = KerasModelImport.importKerasSequentialModelAndWeights(filepath)
             self.is_sequential = True
-
 
     def __call__(self, input):
         if self.is_sequential:
