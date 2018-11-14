@@ -57,11 +57,10 @@ def test_transpose():
 
 
 def test_permute():
-    shapes = [
-        [(2, 3), [0, 1], [1, 0]],
-        [(2, 1), [0, 1], [1, 0]],
-        [(2, 3, 4), [0, 1, 2], [0, 2, 1], [1, 0, 2], [1, 2, 0], [2, 0, 1], [2, 1, 0]]
-        ]
+    shapes = []
+    shapes.append([(2, 3), [0, 1], [1, 0]])
+    shapes.append([(2, 1), [0, 1], [1, 0]])
+    shapes.append([(2, 3, 4), [0, 1, 2], [0, 2, 1], [1, 0, 2], [1, 2, 0], [2, 0, 1], [2, 1, 0]])
 
     for shape in shapes:
         x_np = np.random.random(shape[0])
