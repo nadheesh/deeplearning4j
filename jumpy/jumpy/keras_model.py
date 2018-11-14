@@ -22,7 +22,7 @@ class KerasModel(object):
                     raise ValueError(err)
                 input = input[0]
             input = array(input).array
-            out = self.model.output(input,  False)
+            out = self.model.output(input, False)
             out = array(out)
             return out
         else:
